@@ -14,7 +14,7 @@
 #define CPU_FREQ 6500000
 #define DIVIDER CPU_FREQ/0x10000 //to get ~1Hz pulses
 
-void PWM_IRQ_WRAP_0_Handler() __attribute__((interrupt));
+void PWM_IRQ_WRAP_0_Handler() __attribute__((interrupt)) __attribute__((aligned(32)));
 
 void PWM_IRQ_WRAP_0_Handler(){
 

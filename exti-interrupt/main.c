@@ -8,7 +8,7 @@
 
 #define PIN25 25
 
-void IO_IRQ_BANK0_Handler() __attribute__((interrupt));
+void IO_IRQ_BANK0_Handler() __attribute__((interrupt)) __attribute__((aligned(32)));
 
 void IO_IRQ_BANK0_Handler(){
 
