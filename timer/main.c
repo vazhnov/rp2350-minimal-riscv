@@ -8,7 +8,7 @@
 
 #define A_DUTY 0x8000 //0.5 duty
 #define B_DUTY 0x2000 //0.125 duty
-#define CPU_FREQ 6500000
+#define CPU_FREQ 11000000
 #define DIVIDER CPU_FREQ/0x10000 //to get ~1Hz pulses, because the counter is 16-bits
 #define CH4 4
 
