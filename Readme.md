@@ -12,6 +12,13 @@ Compiler `gcc-riscv64-unknown-elf` is needed.
 
 * Debian/Ubuntu: install package `gcc-riscv64-unknown-elf`.
 
+### Minimum GCC version
+
+Probably the minimum GCC version to build a code for RP2350 is 12.2, see [raspberrypi/pico-bootrom-rp2350#Getting a RISC-V compiler](https://github.com/raspberrypi/pico-bootrom-rp2350/blob/master/README.md#getting-a-risc-v-compiler):
+> Not all the fancy instructions supported by Hazard3 will be in the compilers in people's package managers right now (and we do want to use them here since the bitmanip instructions improve code density). At time of writing the master branch of `riscv-gnu-toolchain` is GCC 12, which does support the bit manipulation instructions.
+>
+> The following compiler is known to be correct: `corev-openhw-gcc-ubuntu2204-20240114`. Others may or may not; because space is very tight, slight compiler variations can cause code not to fit.
+
 ## How to use
 
 Navigate into a needed folder (for example, with `cd …` command), then run `make all` to build binaries.
