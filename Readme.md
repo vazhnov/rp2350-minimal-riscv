@@ -8,7 +8,7 @@ peripheral, not present on RP2350's RISC-V cores. Instead, there is the RISC-V p
 
 ## Prerequisites
 
-Compiler `gcc-riscv64-unknown-elf` is needed.
+Compiler `riscv64-unknown-elf-gcc` is needed.
 
 * Debian/Ubuntu: install package `gcc-riscv64-unknown-elf`.
 
